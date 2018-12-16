@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" mlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/bootstrap.css}" href="../static/bootstrap.css" rel="stylesheet" />
+    <link th:href="@{/bootstrap.js}" href="../static/bootstrap.js" rel="stylesheet" />
+    <script type="text/javascript" src="/static/angular.min.js" th:src="@{/angular.min.js}"></script>
+    <script type="text/javascript" src="/static/app/app.module.js" th:src="@{/app/app.module.js}"></script>
+    <script type="text/javascript" src="/static/app/topics.controller.js" th:src="@{/app/topics.controller.js}"></script>
+    <title>Title</title>
+</head>
+<body ng-app="app" ng-controller="TopicsController as vm">
+<div class="jumbotron">
+    <h1 th:if="${mode  == 'X'}" th:text="${username}"></h1>
+</div>
+
+</body>
+</html>
